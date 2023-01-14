@@ -1,0 +1,33 @@
+<h2><a class="btn btn-success" href="/user"><i class="fa fa-plus"></i> Benutzer hinzufügen</a> Alle Benutzer</h2>
+{{#if message}}
+<div class="alert alert-{{message.type}}" role="alert">
+    <strong> {{message.message}}</strong>
+</div>
+{{/if}}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Email</th>
+            <th>Telefonnummer</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+            <td>{{this.firstName}}</td>
+            <td>{{this.lastName}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.mobile}}</td>
+            <td><a href="/user/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a></td>
+            <td><a href="/user/delete/{{this._id}}"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a></td>
+        </tr>
+
+
+        {{/each}}
+
+
+    </tbody>
+</table>

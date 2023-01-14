@@ -1,0 +1,33 @@
+<h3>{{{viewTitle}}}</h3>
+{{#if message}}
+<div class="alert alert-{{message.type}}" role="alert">
+    <strong> {{message.message}}</strong>
+</div>
+{{/if}}
+<form action="/user" method="POST" class="needs-validation" style="margin-top: 5%">
+
+    <div class="form-group">
+        <label for="">Vorname</label>
+        <input type="text" class="form-control" name="firstName" placeholder="Vorname" value="">
+    </div>
+    <div class="form-group">
+        <label for="">Nachname</label>
+        <input type="text" class="form-control" name="lastName" placeholder="Nachname">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="">Email</label>
+            <input type="text" class="form-control" name="email" placeholder="Email">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="">Mobilfunknummer</label>
+            <input type="text" class="form-control" name="mobile" placeholder="Mobil-Funknummer">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success"><i class="fa fa-database"></i> Benutzer anlegen</button>
+            <a class="btn btn-info" href="/display"><i class="fa fa-plus"></i> Alle Benutzer anzeigen</a>
+        </div>
+    </div>
+
+
+</form>

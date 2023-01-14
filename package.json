@@ -1,0 +1,25 @@
+{
+  "name": "dbsemester",
+  "version": "1.0.0",
+  "description": "Semester Project App Mongo DB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-flash-message": "^2.1.0",
+    "express-handlebars": "^6.0.6",
+    "express-hbs": "^2.4.0",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "mongoose": "^6.8.0",
+    "nodemon": "^2.0.20"
+  }
+}
